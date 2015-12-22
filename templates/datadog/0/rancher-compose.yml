@@ -1,0 +1,22 @@
+.catalog:
+  name: "Datadog"
+  version: "v0"
+  description: "Container-Native Application and Infrastructure Monitoring"
+  uuid: datadog-0
+  questions:
+    - variable: "DD_API_KEY"
+      label: "Datadog API key"
+      description: "Your Datadog API key. Signup at www.datadog.com"
+      type: "string"
+      required: true
+    - variable: "DD_TAGS"
+      label: "Host tags"
+      description: "Host tags to be applied to your monitored hosts. Should be a comma separated list of key:value tags. Example: simple-tag-0,tag-key-1:tag-value-1"
+      type: "string"
+      required: false
+    - variable: "DD_VERSION"
+      label: "Datadog Agent version"
+      description: "Pick a version of the Datadog Agent Docker image to pull. Default will use the latest version. You can find the list of available versions at https://hub.docker.com/r/datadog/docker-dd-agent/tags/"
+      type: "string"
+      default: "latest" 
+      required: true
