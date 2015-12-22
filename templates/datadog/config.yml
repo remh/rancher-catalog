@@ -1,0 +1,5 @@
+name: Datadog
+description: |
+  Infrastructure monitoring for large-scale applications
+version: v0
+category: Monitoring
